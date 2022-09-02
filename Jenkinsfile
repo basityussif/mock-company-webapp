@@ -14,7 +14,6 @@ pipeline {
          sh "./gradle assemble"
       }
     }
-     stages {
     stage("test") {
       steps{
         echo 'testing the application...'

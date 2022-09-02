@@ -11,13 +11,13 @@ pipeline {
     stage("build") {
       steps{
         echo 'building the application...'
-         sh "./gradle assemble"
+         sh "./gradlew assemble"
       }
     }
     stage("test") {
       steps{
         echo 'testing the application...'
-         sh "./gradle test"
+         sh "./gradlew test"
       }
     }
   }
